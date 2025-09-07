@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, DM_Sans } from "next/font/google";
+import { AutoThemeSwitcher } from "@/app/theme";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -22,7 +23,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html lang="en">
       <body className={cn(dmSans.variable, grotesque.variable, "antialiased")}>
-        {children}
+        <AutoThemeSwitcher>{children}</AutoThemeSwitcher>
       </body>
     </html>
   );

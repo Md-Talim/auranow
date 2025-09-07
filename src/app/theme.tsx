@@ -20,7 +20,7 @@ export const AutoThemeSwitcher = ({ children }: { children: ReactNode }) => {
     } else {
       document.body.classList.remove("dark");
     }
-  });
+  }, []);
 
   return <>{children}</>;
 };

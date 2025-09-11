@@ -25,7 +25,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
       <body
         className={cn(dmSans.variable, grotesque.variable, "dark antialiased")}
       >
-        <div className="max-w-4xl mx-auto min-h-screen">
+        <div className="max-w-7xl mx-auto min-h-screen px-4">
           <AppBar />
           <main>{children}</main>
         </div>
